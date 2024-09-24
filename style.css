@@ -1,0 +1,112 @@
+/* ベーススタイル */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    background-color: #ffb74d;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    font-size: 1.6em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options li {
+    margin: 15px 0;
+}
+
+button.option-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.option-btn:hover {
+    background-color: #ffcc80;
+    border-color: #ff9800;
+    color: white;
+}
+
+button.next-btn {
+    margin-top: 30px;
+    padding: 15px 40px;
+    background-color: #26a69a;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.next-btn:hover {
+    background-color: #1e8a73;
+}
+
+/* スマホ向けスタイル */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .question {
+        font-size: 1.4em;
+    }
+
+    button.option-btn {
+        font-size: 1em;
+    }
+
+    button.next-btn {
+        font-size: 1.2em;
+        padding: 10px 30px;
+    }
+}
